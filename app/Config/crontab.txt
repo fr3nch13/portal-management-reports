@@ -1,0 +1,12 @@
+# holds the list of all of the cronjobs
+# the variables in this file are like [variable_name]
+# they will be replaced with the proper variable
+# to see a list of available variables, see app/lib/scripts/paths.sh
+# when you add a new variable, make sure it's getting properly replaced
+# this is done in the app/update.sh script
+
+# every 5 minutes, check for failed logins
+*/5 * * * *		[path_bin]cron_failed_logins.sh >> [path_logs]cron_failed_logins.log
+
+
+

@@ -1,0 +1,31 @@
+div.favorites-import {
+	display: block;
+	clear:both;
+	margin: 0 0 30px 0;
+	padding: 0;
+}
+
+div.favorites-import div.favorites-off {
+	margin: 0;
+	text-align: right;
+}
+
+div.favorites-import div.favorites-on {
+	margin: 0;
+}
+
+div.favorites-import div.favorites-on div.favorites-cancel {
+	margin: 0;
+	text-align: right;
+}
+
+div.favorites-import div.multipleSelect,
+div.favorites-import div.select,
+div.favorites-import div.input {
+	margin-bottom: 0;
+}
+
+div.favorites-import a.favorites-submit {
+	display: inline-block;
+	margin-top: 20px;
+}

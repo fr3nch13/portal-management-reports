@@ -1,0 +1,37 @@
+{
+	"name": "nih-fo/portal-management-reports",
+	"description": "Portal: Management Reports",
+	"type": "project",
+	"keywords": ["project", "application", "management reports"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Brian French",
+			"role": "Developer"
+		},
+		{
+			"name": "Joshua Knust",
+			"role": "Manager"
+		} 
+	],
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"require": {
+		"nih-fo/legacy-plugin-utilities": "1.*",
+		"nih-fo/legacy-plugin-php-excel": "1.*"
+	}, 
+	"config": {
+		"vendor-dir": "Vendor/",
+		"secure-http": false
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"chmod 755 ./bin/*",
+			"./bin/post-install-cmd.sh"
+		],
+		"post-update-cmd": [
+			"chmod 755 ./bin/*",
+			"./bin/post-install-cmd.sh"
+		]
+	}
+}

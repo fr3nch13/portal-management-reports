@@ -1,0 +1,242 @@
+
+.fixed {
+position: fixed;
+top: 0;
+}
+table.sortable_columns_master {
+margin:0;
+padding:0;
+border-width: 0;
+}
+table.sortable_columns_master tr td {
+margin:0;
+padding:0;
+background-color: #fff;
+border-width: 0;
+}
+
+table.sortable_columns_master tr td.legend
+{
+color:#444;
+font-size: 90%;
+padding: 5px;
+}
+table.sortable_columns_master tr td.multi_options
+{
+font-size: 85%;
+padding: 5px;
+white-space: nowrap;
+text-align: right;
+}
+table.sortable_columns_master tr td.multi_options button,
+table.sortable_columns_master tr td.multi_options select
+{
+	display: inline-block;
+	height: 2.8em;
+	border-radius: 0px;
+	font-size: 1em;
+}
+table.sortable_columns_master tr td.multi_options select
+{
+	width: 180px;
+	padding: 3px 6px;
+}
+
+table.sortable_columns_master tr td.html_column_holders
+{
+width: 20%;
+}
+table.sortable_columns_master tr td.html_columns
+{
+background-color: #fafafa;
+}
+
+.sortable_columns {
+    position: relative;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+    width: 100%;
+}
+.sortable_columns > li {
+    position: absolute;
+    background-color: #FFF;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px #DDD;
+    min-height: 100px;
+    width: 32%;
+}
+.sortable_column_wrapper {
+}
+.sortable_column_title {
+position: relative;
+font-size: 110%;
+font-weight: bold;
+padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+.sortable_column_title:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.sortable_column_title_name {
+float:left;
+}
+.sortable_column_title_options {
+float:right;
+}
+.sortable_column_title_options input[type="submit"] {
+margin: 0;
+padding: 2px;
+font-size: 80%;
+}
+.sortable_column_title_options input[type="checkbox"] {
+    clear: none;
+    float: left;
+    margin: 0px 6px 0px 2px;
+    width: auto;
+}
+.sortable_column_title_options a {
+float:left;
+display: block;
+font-size: 80%;
+    margin: 1px 6px 0px 2px;
+}
+.sortable_column_title_add {
+padding: 2px;
+border-bottom: 1px solid #DDD;
+}
+/* for the forms that are loaded */
+.sortable_column_title_add h1,
+.sortable_column_title_add h3,
+.sortable_column_title_add div.top,
+.sortable_column_title_add label,
+.sortable_column_title_add div.proctime_results {
+	display: none;
+}
+.sortable_column_title_add fieldset {
+	padding: 0;
+}
+
+.sortable_column {
+padding: 0px 0px 50px 0px;
+min-height: 100px;
+}
+.sortable_portlet {
+margin: 2px;
+position: relative;
+cursor: move;
+border-top: 1px solid #fff;
+border-left: 1px solid #fff;
+border-right: 1px solid #fff;
+border-bottom: 1px solid #eaeaea;
+background-color: #fff;
+color: #333;
+}
+.sortable_portlet_hover {
+border: 1px solid #ccc;
+background-color: #eaeaea;
+}
+.sortable_portlet_checked {
+font-weight: bold;
+color: #000;
+}
+.sortable_portlet_highlighted .portlet_header_title {
+text-decoration: underline;
+}
+.portlet_header {
+position: relative;
+padding: 5px;
+}
+.portlet_header_activity {
+position: absolute;
+left: 5px;
+top: 5px;
+width: 10px;
+height: 10px;
+}
+
+.portlet_header_select {
+position: absolute;
+right: 30px;
+top: 5px;
+width: 6px;
+text-align: right;
+/*
+float: left;
+display: inline-block;
+width: 5%;
+*/
+}
+.portlet_header_select input[type="checkbox"] {
+margin: 0;
+padding: 2px;
+}
+.portlet_header_title {
+display: inline-block;
+width: 83%;
+margin-left: 15px;
+}
+.portlet_header_date {
+font-style: italic;
+font-size: 80%;
+float:right;
+color: #555;
+}
+.portlet_header_options {
+position: absolute;
+right: 10px;
+top: 5px;
+width: 10px;
+text-align: right;
+cursor: pointer;
+/*display: inline-block;
+position: absolute;
+right: 5px;
+top: 5px;
+text-align: center;
+line-height: 35px;
+color: rgba(100,100,100,.2);
+text-shadow: 0px 0px 0px rgba(0,0,0,0);
+*/
+}
+
+.portlet_content {
+}
+.portlet_content .arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid rgba(255,255,255,0);
+    border-right: 7px solid rgba(255,255,255,0);
+    border-bottom: 7px solid #fff;
+    margin: 0px 0px -1px 5px;
+}
+.portlet_content span {
+display:block;
+border-top: 1px solid #fff;
+padding: 0.4em;
+background-color: rgba(255,255,255,0.5);
+}
+.ui-sortable-helper {
+border: 1px solid #E6EA8F;
+background-color: #FAFF9E;
+}
+.portlet_toggle {
+position: absolute;
+top: 50%;
+right: 0;
+margin-top: -8px;
+}
+.portlet_placeholder {
+margin: 0.3em;
+padding: 0.3em;
+height: 2em;
+line-height: 2em;
+border: 1px solid #ccc;
+background-color: #eaeaea;
+}
