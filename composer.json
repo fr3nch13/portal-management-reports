@@ -1,5 +1,5 @@
 {
-	"name": "nih-fo/portal-management-reports",
+	"name": "fr3nch13/portal-management-reports",
 	"description": "Portal: Management Reports",
 	"type": "project",
 	"keywords": ["project", "application", "management reports"],
@@ -17,8 +17,8 @@
 	"minimum-stability" : "dev",
 	"prefer-stable" : true,
 	"require": {
-		"nih-fo/legacy-plugin-utilities": "1.*",
-		"nih-fo/legacy-plugin-php-excel": "1.*"
+		"fr3nch13/plugin-utilities": "1.*",
+		"fr3nch13/plugin-php-excel": "1.*"
 	}, 
 	"config": {
 		"vendor-dir": "Vendor/",
